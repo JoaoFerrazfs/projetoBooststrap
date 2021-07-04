@@ -3,46 +3,50 @@
 <html lang="pt-br">
 
 <head>
-    <title>Primeira Página com Bootstrap</title>
+    <title>To-do List</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="body">
+<body class="body container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Nome</a>
             <img src="/img/post-it.png" alt="" width="20" height="20">
             <a class="navbar-brand" href="#">Perfil</a>
     </nav>
 
-    <nav class="tarefas">
+    <nav class=" container-fluid  " style="padding-bottom: 100px;">
 
-        <button type="button" class="btn btn-success" style="margin:20px;">Criar Nota</button>
+        <div class="container " style="text-align:left; margin-top: 70px;">
+            <button type="button" class="btn btn-success">Criar Nota</button>
+        </div>
+
+        <div class="row col-md-12  container-fluid text-center ">
 
 
-        <div class="row mb-3 container-fluid text-center ">
+            <div class="col-md-4 container ">            
+            <div class="aberto  notas ">
+                    <div class="container-fluid status ">
+                        <p>Novas tarefas</p>
+                    </div>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                </div>
+
+            </div>
+
             <div class="col-md-4 container  ">
-
-                <div class="container-fluid status ">
-                    <p>Novas tarefas</p>
-                </div>
-
-                <div class="aberto notas ">
-                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
-                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
-                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
-                </div>
-
-            </div>
-
-            <div class="col-md-4  ">
-                <div class="container-fluid status ">
-                    <p>Em andamento</p>
-                </div>
-                <div class="andamento notas ">
+                <div class="andamento  notas ">
+                    <div class="container-fluid status ">
+                        <p>Em andamento</p>
+                    </div>
                     <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
                     <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
                     <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
@@ -52,11 +56,16 @@
             </div>
 
             <div class="col-md-4  ">
-                <div class="container-fluid status ">
-                    <p>Finalizadas</p>
-                </div>
-
-                <div class="concluido notas ">
+                <div class="concluido notas padding ">
+                    <div class="container-fluid status ">
+                        <p>Finalizadas</p>
+                    </div>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
+                    <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
                     <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
                     <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
                     <a class="col-md-7 container-fluid " ref=”#”>Clique aqui!</a>
@@ -72,10 +81,9 @@
     </div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom ">
+    <nav class="navbar navbar-toggler navbar-dark bg-dark fixed-bottom ">
         <div class="container-fluid ">
-
-
             <a class="navbar-brand " href="# ">Logout</a>
     </nav>
+
 </body>
